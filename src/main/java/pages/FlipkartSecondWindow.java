@@ -33,7 +33,8 @@ public class FlipkartSecondWindow extends FlipkartFirstWindow {
 	}
 	
 	public static void compareChildAndSource() {
-		wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wd.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		System.out.println(data1);
 		System.out.println(dataprice);
 		if(data1.equals(dataprice)) {
@@ -52,18 +53,20 @@ public class FlipkartSecondWindow extends FlipkartFirstWindow {
 	
 	public static void getFinalNameAndPrice() {
 		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wd.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		WebElement input2 = wd.findElement(By.xpath("(//div[@class='_2-uG6-']//child::a[@class='_2Kn22P gBNbID'])[1]"));
 		String data2 = input2.getText();
 		System.out.println(data2);
 		WebElement input3 = wd.findElement(By.xpath("//div[@class='_3fSRat']//child::span[@class='_2-ut7f _1WpvJ7']"));
 		String data3 = input3.getText();
 		System.out.println(data3);
-		
+		int i = 1/0;
 
 	}
 	
 	public static void clickOnPlaceOrder() {
 		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wd.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		WebElement input4 = wd.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div/div[1]/div/div[3]/div/form/button/span"));
 		input4.click();
 		wd.close();
