@@ -1,0 +1,815 @@
+# Created at 2020-11-17T17:53:23.061
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-11-17T17:53:34.106
+Unexpected IOException with stream:   When enter URL as https://www.flipkart.com/                # testCases.FlipkartTaskMethods.enter_url(java.lang.String)
+
+# Created at 2020-11-17T17:53:34.109
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.120
+Unexpected IOException with stream:       org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Ramyah-VAIO', ip: '192.168.0.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at pages.FlipkartFirstWindow.enterUrl(FlipkartFirstWindow.java:32)
+	at testCases.FlipkartTaskMethods.enter_url(FlipkartTaskMethods.java:21)
+	at ?.enter URL as https://www.flipkart.com/(file:///C:/SeleniumWorkSpace/Task_CucumberFlipkartTest/src/test/resources/feature/task.feature:6)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at pages.FlipkartFirstWindow.enterUrl(FlipkartFirstWindow.java:32)
+	at testCases.FlipkartTaskMethods.enter_url(FlipkartTaskMethods.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 58 more
+
+
+# Created at 2020-11-17T17:53:34.131
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.173
+Unexpected IOException with stream:   Then close popup                                           # testCases.FlipkartTaskMethods.close_popup()
+
+# Created at 2020-11-17T17:53:34.177
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.192
+Unexpected IOException with stream:   When type samsung in search box and hit enter              # testCases.FlipkartTaskMethods.type_samsung_in_search_box_and_hit_enter()
+
+# Created at 2020-11-17T17:53:34.197
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.204
+Unexpected IOException with stream:   Then get the title and price of the first link             # testCases.FlipkartTaskMethods.get_the_title_and_price_of_the_first_link()
+
+# Created at 2020-11-17T17:53:34.206
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.212
+Unexpected IOException with stream:   When click the first link                                  # testCases.FlipkartTaskMethods.click_the_first_link()
+
+# Created at 2020-11-17T17:53:34.215
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.221
+Unexpected IOException with stream:   Then switch to the first window                            # testCases.FlipkartTaskMethods.switch_to_the_first_window()
+
+# Created at 2020-11-17T17:53:34.224
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.229
+Unexpected IOException with stream:   Then get the title and price of the searched mobile        # testCases.FlipkartTaskMethods.get_the_title_and_price_of_the_searched_mobile()
+
+# Created at 2020-11-17T17:53:34.233
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.242
+Unexpected IOException with stream:   When price of the searched mobile matches with the source  # testCases.FlipkartTaskMethods.price_of_the_searched_mobile_matches_with_the_source()
+
+# Created at 2020-11-17T17:53:34.245
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.251
+Unexpected IOException with stream:   Then click on go to cart                                   # testCases.FlipkartTaskMethods.click_on_go_to_cart()
+
+# Created at 2020-11-17T17:53:34.255
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.260
+Unexpected IOException with stream:   When price of the added cart is same as previous           # testCases.FlipkartTaskMethods.price_of_the_added_cart_is_same_as_previous()
+
+# Created at 2020-11-17T17:53:34.266
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.272
+Unexpected IOException with stream:   Then click on place order                                  # testCases.FlipkartTaskMethods.click_on_place_order()
+
+# Created at 2020-11-17T17:53:34.275
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.315
+Unexpected IOException: 7,1,validate flipkart item,validate cost of samsung mobile and add it to cart(validate flipkart item),null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'Ramyah-VAIO'\002C ip: '192.168.0.2'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=47.0.1\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80,null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'Ramyah-VAIO'\002C ip: '192.168.0.2'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=47.0.1\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'Ramyah-VAIO'\002C ip: '192.168.0.2'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=47.0.1\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80,org.openqa.selenium.remote.UnreachableBrowserException: \000AError communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'Ramyah-VAIO'\002C ip: '192.168.0.2'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=47.0.1\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80\000ACaused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2020-11-17T17:53:34.744
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.748
+Unexpected IOException with stream: Failed scenarios:
+
+
+# Created at 2020-11-17T17:53:34.752
+Unexpected IOException with stream: file:///C:/SeleniumWorkSpace/Task_CucumberFlipkartTest/src/test/resources/feature/task.feature:4
+
+# Created at 2020-11-17T17:53:34.755
+Unexpected IOException with stream: # validate cost of samsung mobile and add it to cart
+
+
+# Created at 2020-11-17T17:53:34.757
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.760
+Unexpected IOException with stream: 1
+
+# Created at 2020-11-17T17:53:34.762
+Unexpected IOException with stream:  Scenarios (
+
+# Created at 2020-11-17T17:53:34.765
+Unexpected IOException with stream: 1 failed
+
+# Created at 2020-11-17T17:53:34.767
+Unexpected IOException with stream: )
+
+
+# Created at 2020-11-17T17:53:34.770
+Unexpected IOException with stream: 12
+
+# Created at 2020-11-17T17:53:34.772
+Unexpected IOException with stream:  Steps (
+
+# Created at 2020-11-17T17:53:34.775
+Unexpected IOException with stream: 1 failed
+
+# Created at 2020-11-17T17:53:34.778
+Unexpected IOException with stream: , 
+
+# Created at 2020-11-17T17:53:34.781
+Unexpected IOException with stream: 10 skipped
+
+# Created at 2020-11-17T17:53:34.784
+Unexpected IOException with stream: , 
+
+# Created at 2020-11-17T17:53:34.787
+Unexpected IOException with stream: 1 passed
+
+# Created at 2020-11-17T17:53:34.790
+Unexpected IOException with stream: )
+
+
+# Created at 2020-11-17T17:53:34.793
+Unexpected IOException with stream: 1m
+
+# Created at 2020-11-17T17:53:34.797
+Unexpected IOException with stream: 25.140s
+
+
+# Created at 2020-11-17T17:53:34.800
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.803
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.810
+Unexpected IOException with stream: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Ramyah-VAIO', ip: '192.168.0.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 62ab5923-bdaa-422c-849a-5afaa9c2ce80
+
+# Created at 2020-11-17T17:53:34.813
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.815
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+
+# Created at 2020-11-17T17:53:34.817
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.819
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+
+# Created at 2020-11-17T17:53:34.821
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.823
+Unexpected IOException with stream: 	at pages.FlipkartFirstWindow.enterUrl(FlipkartFirstWindow.java:32)
+
+# Created at 2020-11-17T17:53:34.825
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.827
+Unexpected IOException with stream: 	at testCases.FlipkartTaskMethods.enter_url(FlipkartTaskMethods.java:21)
+
+# Created at 2020-11-17T17:53:34.828
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.831
+Unexpected IOException with stream: 	at ?.enter URL as https://www.flipkart.com/(file:///C:/SeleniumWorkSpace/Task_CucumberFlipkartTest/src/test/resources/feature/task.feature:6)
+
+# Created at 2020-11-17T17:53:34.834
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.835
+Unexpected IOException with stream: Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+
+# Created at 2020-11-17T17:53:34.837
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.839
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+
+# Created at 2020-11-17T17:53:34.840
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.842
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+
+# Created at 2020-11-17T17:53:34.844
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.846
+Unexpected IOException with stream: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+
+# Created at 2020-11-17T17:53:34.849
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.851
+Unexpected IOException with stream: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+
+# Created at 2020-11-17T17:53:34.853
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.855
+Unexpected IOException with stream: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+
+# Created at 2020-11-17T17:53:34.858
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.860
+Unexpected IOException with stream: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+
+# Created at 2020-11-17T17:53:34.861
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.863
+Unexpected IOException with stream: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+
+# Created at 2020-11-17T17:53:34.866
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.868
+Unexpected IOException with stream: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+
+# Created at 2020-11-17T17:53:34.870
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.873
+Unexpected IOException with stream: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+
+# Created at 2020-11-17T17:53:34.875
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.877
+Unexpected IOException with stream: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+
+# Created at 2020-11-17T17:53:34.879
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.881
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+
+# Created at 2020-11-17T17:53:34.883
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.885
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+
+# Created at 2020-11-17T17:53:34.887
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.889
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+
+# Created at 2020-11-17T17:53:34.891
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.892
+Unexpected IOException with stream: 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+
+# Created at 2020-11-17T17:53:34.894
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.895
+Unexpected IOException with stream: 	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+
+# Created at 2020-11-17T17:53:34.897
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.899
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+
+# Created at 2020-11-17T17:53:34.900
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.902
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+
+# Created at 2020-11-17T17:53:34.904
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.907
+Unexpected IOException with stream: 	at pages.FlipkartFirstWindow.enterUrl(FlipkartFirstWindow.java:32)
+
+# Created at 2020-11-17T17:53:34.909
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.914
+Unexpected IOException with stream: 	at testCases.FlipkartTaskMethods.enter_url(FlipkartTaskMethods.java:21)
+
+# Created at 2020-11-17T17:53:34.916
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.919
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2020-11-17T17:53:34.921
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.923
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created at 2020-11-17T17:53:34.924
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.926
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2020-11-17T17:53:34.927
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.928
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created at 2020-11-17T17:53:34.930
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.932
+Unexpected IOException with stream: 	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+
+# Created at 2020-11-17T17:53:34.934
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.937
+Unexpected IOException with stream: 	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+
+# Created at 2020-11-17T17:53:34.940
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.941
+Unexpected IOException with stream: 	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+
+# Created at 2020-11-17T17:53:34.943
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.944
+Unexpected IOException with stream: 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+
+# Created at 2020-11-17T17:53:34.946
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.947
+Unexpected IOException with stream: 	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+
+# Created at 2020-11-17T17:53:34.949
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.952
+Unexpected IOException with stream: 	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+
+# Created at 2020-11-17T17:53:34.955
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.957
+Unexpected IOException with stream: 	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+
+# Created at 2020-11-17T17:53:34.959
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.960
+Unexpected IOException with stream: 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+
+# Created at 2020-11-17T17:53:34.962
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.964
+Unexpected IOException with stream: 	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+
+# Created at 2020-11-17T17:53:34.966
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.969
+Unexpected IOException with stream: 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+
+# Created at 2020-11-17T17:53:34.972
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.975
+Unexpected IOException with stream: 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+
+# Created at 2020-11-17T17:53:34.977
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.979
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+
+# Created at 2020-11-17T17:53:34.981
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.983
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+
+# Created at 2020-11-17T17:53:34.985
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.987
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+
+# Created at 2020-11-17T17:53:34.989
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.990
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+
+# Created at 2020-11-17T17:53:34.992
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.993
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+
+# Created at 2020-11-17T17:53:34.995
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:34.997
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+
+# Created at 2020-11-17T17:53:34.998
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.001
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+
+# Created at 2020-11-17T17:53:35.003
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.006
+Unexpected IOException with stream: 	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+
+# Created at 2020-11-17T17:53:35.008
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.010
+Unexpected IOException with stream: 	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+
+# Created at 2020-11-17T17:53:35.012
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.013
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+
+# Created at 2020-11-17T17:53:35.016
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.018
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+
+# Created at 2020-11-17T17:53:35.021
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.024
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+
+# Created at 2020-11-17T17:53:35.026
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.028
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+
+# Created at 2020-11-17T17:53:35.030
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.033
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+
+# Created at 2020-11-17T17:53:35.035
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.038
+Unexpected IOException with stream: 	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+
+# Created at 2020-11-17T17:53:35.042
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.046
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+
+# Created at 2020-11-17T17:53:35.049
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.052
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+
+# Created at 2020-11-17T17:53:35.055
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.059
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created at 2020-11-17T17:53:35.062
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.064
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+
+# Created at 2020-11-17T17:53:35.067
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.070
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+
+# Created at 2020-11-17T17:53:35.072
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.077
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created at 2020-11-17T17:53:35.080
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.082
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+
+# Created at 2020-11-17T17:53:35.084
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.088
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+
+# Created at 2020-11-17T17:53:35.091
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.093
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+
+# Created at 2020-11-17T17:53:35.094
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.096
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+
+# Created at 2020-11-17T17:53:35.097
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.100
+Unexpected IOException with stream: Caused by: java.net.ConnectException: Connection refused: connect
+
+# Created at 2020-11-17T17:53:35.102
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.103
+Unexpected IOException with stream: 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+
+# Created at 2020-11-17T17:53:35.105
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.107
+Unexpected IOException with stream: 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+
+# Created at 2020-11-17T17:53:35.110
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.113
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+
+# Created at 2020-11-17T17:53:35.118
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.121
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+
+# Created at 2020-11-17T17:53:35.123
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.125
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+
+# Created at 2020-11-17T17:53:35.126
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.129
+Unexpected IOException with stream: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+
+# Created at 2020-11-17T17:53:35.131
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.133
+Unexpected IOException with stream: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+
+# Created at 2020-11-17T17:53:35.135
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.137
+Unexpected IOException with stream: 	at java.net.Socket.connect(Socket.java:589)
+
+# Created at 2020-11-17T17:53:35.139
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.142
+Unexpected IOException with stream: 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+
+# Created at 2020-11-17T17:53:35.143
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.145
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+
+# Created at 2020-11-17T17:53:35.146
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.148
+Unexpected IOException with stream: 	... 58 more
+
+# Created at 2020-11-17T17:53:35.150
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.152
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.154
+Unexpected IOException with stream: 
+
+
+# Created at 2020-11-17T17:53:35.157
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,runner.RunnerTest,null,null,null
+
+

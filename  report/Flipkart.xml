@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="71.985">
+<testcase classname="validate flipkart item" name="validate cost of samsung mobile and add it to cart" time="71.317">
+<system-out><![CDATA[Given open firefox browser..................................................passed
+When enter URL as https://www.flipkart.com/.................................passed
+Then close popup............................................................passed
+When type samsung in search box and hit enter...............................passed
+Then get the title and price of the first link..............................passed
+When click the first link...................................................passed
+Then switch to the first window.............................................passed
+Then get the title and price of the searched mobile.........................passed
+When price of the searched mobile matches with the source...................passed
+Then click on go to cart....................................................passed
+When price of the added cart is same as previous............................passed
+Then click on place order...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

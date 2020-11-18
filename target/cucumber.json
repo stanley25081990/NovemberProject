@@ -1,0 +1,188 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-18T08:09:56.343Z",
+        "line": 4,
+        "name": "validate cost of samsung mobile and add it to cart",
+        "description": "",
+        "id": "validate-flipkart-item;validate-cost-of-samsung-mobile-and-add-it-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23367000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open firefox browser",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.open_firefox_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15536000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter URL as https://www.flipkart.com/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.flipkart.com/",
+                  "offset": 13
+                }
+              ],
+              "location": "testCases.FlipkartTaskMethods.enter_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 925000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "close popup",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.close_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2154000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "type samsung in search box and hit enter",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.type_samsung_in_search_box_and_hit_enter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8033000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "get the title and price of the first link",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.get_the_title_and_price_of_the_first_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6349000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click the first link",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.click_the_first_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "switch to the first window",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.switch_to_the_first_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2385000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "get the title and price of the searched mobile",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.get_the_title_and_price_of_the_searched_mobile()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "price of the searched mobile matches with the source",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.price_of_the_searched_mobile_matches_with_the_source()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 419000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on go to cart",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.click_on_go_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2158000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "price of the added cart is same as previous",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.price_of_the_added_cart_is_same_as_previous()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9667000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on place order",
+            "match": {
+              "location": "testCases.FlipkartTaskMethods.click_on_place_order()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TaskTest"
+          }
+        ]
+      }
+    ],
+    "name": "validate flipkart item",
+    "description": "",
+    "id": "validate-flipkart-item",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/task.feature",
+    "tags": [
+      {
+        "name": "@TaskTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
